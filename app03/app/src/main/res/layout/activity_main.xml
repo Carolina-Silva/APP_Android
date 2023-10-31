@@ -29,12 +29,11 @@
         android:textAlignment="center"
         android:textSize="20sp" />
 
-
     <Button
         android:id="@+id/btn_Converter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/amarelo"
+        android:background="@color/button"
         android:text="Converter para Graus Fahrenheit"
         android:textAlignment="center"
         android:textSize="15sp" />
