@@ -8,8 +8,7 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:theme="@style/Theme.BlocoDeNotas.AppBarOverlay" >
+        android:layout_height="140dp">
 
         <ImageView
             android:id="@+id/imageView"
@@ -27,6 +26,7 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:fabSize="normal"
-        app:srcCompat="@drawable/ic_baseline_check_circle_24" />
+        app:srcCompat="@drawable/baseline_checklist_rtl_24"
+        android:contentDescription="Botão para confirmar a ação" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
