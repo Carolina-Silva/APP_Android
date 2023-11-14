@@ -3,15 +3,18 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="20dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:textSize="18sp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Valor em Reais: " />
+        android:text="Valor em Reais: "
+        android:textSize="18sp"/>
 
     <EditText
         android:id="@+id/txtValor"
+        android:textSize="18sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Ex: 45,00"
@@ -19,8 +22,10 @@
 
     <Button
         android:id="@+id/btnCalcular"
+        android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#4B0082"
         android:text="Calcular" />
 
 </LinearLayout>

@@ -20,17 +20,20 @@ import java.util.Locale
 class MainActivity : AppCompatActivity() {
     val API_URL = "https://www.mercadobitcoin.net/api/BTC/ticker/"
 
+    lateinit var txtValor: EditText
+    lateinit var btnCalcular: Button
+    lateinit var txtQtdBitcoins: TextView
+
     var cotacaoBitcoin: Double = 0.0
-
-    var txtValor = findViewById<EditText>(R.id.txtValor)
-
-    var btnCalcular = findViewById<Button>(R.id.btnCalcular)
-
-    var txtQtdBitcoins = findViewById<TextView>(R.id.txtQtdBitcoins)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // Inicializa as views após o setContentView
+        txtValor = findViewById(R.id.txtValor)
+        btnCalcular = findViewById(R.id.btnCalcular)
+        txtQtdBitcoins = findViewById(R.id.txtQtdBitcoins)
 
         buscarCotacao()
 
